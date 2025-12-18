@@ -1,26 +1,26 @@
------
-
-## layout: default
+---
+layout: default
 title: Home
+---
 
 <section class="hero">
-    <div class="container">
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Farid Shukurov">
+        </div>
         <div class="hero-content">
-            <div class="profile-image">
-                <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Farid Shukurov">
-            </div>
-            <div class="hero-text">
-                <h1>Farid Shukurov</h1>
-                <p class="subtitle">BsIT Student | Hardware & Cybersecurity Enthusiast</p>
-                <p class="bio">
-                    First-year undergraduate student at ADA University pursuing a Bachelor's in Information Technology. 
-                    Passionate about hardware systems, cybersecurity, and artificial intelligence. 
-                    When I'm not coding or exploring technology, you'll find me on the judo mat practicing discipline and technique.
-                </p>
-                <div class="cta-buttons">
-                    <a href="{{ '/projects.html' | relative_url }}" class="btn btn-primary">View Projects</a>
-                    <a href="{{ '/about.html' | relative_url }}" class="btn btn-secondary">About Me</a>
-                </div>
+            <h1>Farid Shukurov</h1>
+            <h2>BsIT Student at ADA University</h2>
+            <p class="tagline">Class of 2029 | Information Systems Enthusiast</p>
+            <p class="bio">
+                Welcome to my portfolio! I'm a passionate IT student exploring the fascinating 
+                world of information systems, programming, and technology. Currently pursuing my 
+                Bachelor's degree at ADA University, I'm building my skills in software development, 
+                web technologies, and problem-solving.
+            </p>
+            <div class="cta-buttons">
+                <a href="{{ '/projects.html' | relative_url }}" class="btn btn-primary">View My Projects</a>
+                <a href="{{ '/about.html' | relative_url }}" class="btn btn-secondary">Learn More About Me</a>
             </div>
         </div>
     </div>
@@ -28,19 +28,24 @@ title: Home
 
 <section class="highlights">
     <div class="container">
-        <div class="highlight-grid">
+        <h2>What I Do</h2>
+        <div class="highlights-grid">
             <div class="highlight-card">
-                <h3>Hardware</h3>
-                <p>Deep interest in computer architecture, logic circuits, and low-level systems</p>
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites using HTML, CSS, JavaScript, and Jekyll</p>
             </div>
             <div class="highlight-card">
-                <h3>Cybersecurity</h3>
-                <p>Exploring security principles, threat analysis, and protective measures</p>
+                <div class="icon">🎓</div>
+                <h3>Learning & Growth</h3>
+                <p>Continuously expanding my knowledge in information systems and programming</p>
             </div>
             <div class="highlight-card">
-                <h3>Artificial Intelligence</h3>
-                <p>Learning about machine learning, neural networks, and AI applications</p>
+                <div class="icon">🚀</div>
+                <h3>Project Development</h3>
+                <p>Creating practical projects that solve real-world problems and showcase my skills</p>
             </div>
         </div>
     </div>
 </section>
+```
